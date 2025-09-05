@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somil's Study Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="site-title">Somil's Study Hub</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+  <main>
+    <section id="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="todo-input" placeholder="Add a task">
+      <button onclick="addTask()">Add</button>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <section id="notes">
+      <h2>Notes</h2>
+      <textarea id="notes-input" placeholder="Write your notes..."></textarea>
+      <button onclick="saveNotes()">Save Notes</button>
+      <div id="saved-notes"></div>
+    </section>
+
+    <section id="backup">
+      <h2>Backup / Restore</h2>
+      <button onclick="downloadBackup()">Download Backup</button>
+      <input type="file" id="restore-file" onchange="restoreBackup(event)">
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Somil's Study Hub</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
